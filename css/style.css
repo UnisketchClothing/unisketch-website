@@ -1,73 +1,49 @@
-body{
-margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:white;
+/* Global Imports */
+@import url('./variables.css');
+@import url('./navigation.css');
+@import url('./hero.css');
+@import url('./sections.css');
+@import url('./contact.css');
+@import url('./responsive.css');
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
 }
 
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 60px;
-background:black;
-color:white;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
-.logo{
-font-size:24px;
-font-weight:bold;
-letter-spacing:2px;
+body {
+    font-family: var(--font-primary);
+    color: var(--text-dark);
+    line-height: var(--line-height-base);
+    background: var(--white);
 }
 
-nav a{
-color:white;
-margin-left:25px;
-text-decoration:none;
+/* Footer */
+footer {
+    background: var(--dark-gray);
+    color: var(--white);
+    padding: var(--spacing-xl) 2rem;
+    text-align: center;
+    margin-top: 4rem;
 }
 
-.hero{
-height:70vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-background:#f2f2f2;
-text-align:center;
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
 }
 
-.hero h1{
-font-size:50px;
-margin-bottom:10px;
+footer a {
+    color: var(--gold);
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-.shop-btn{
-padding:12px 30px;
-background:black;
-color:white;
-text-decoration:none;
-margin-top:15px;
-}
-
-.products{
-padding:60px;
-text-align:center;
-}
-
-.product-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:30px;
-margin-top:30px;
-}
-
-.card img{
-width:100%;
-border-radius:6px;
-}
-
-footer{
-background:black;
-color:white;
-text-align:center;
-padding:20px;
+footer a:hover {
+    color: #e6c200;
 }
