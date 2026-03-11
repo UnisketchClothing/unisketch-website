@@ -1,34 +1,18 @@
-/* COLOR VARIABLES */
-:root {
-    --gold: #d4af37;
-    --dark-gray: #2c2c2c;
-    --light-beige: #f5f1ed;
-    --white: #ffffff;
-    --text-dark: #333333;
-    --text-light: #666666;
-    --gold-hover: #c99a2e;
-    --border-light: #e0e0e0;
-}
+:root{
 
-/* TYPOGRAPHY */
-:root {
-    --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --font-size-base: 1rem;
-    --line-height-base: 1.6;
-}
+--primary:#111111;
+--secondary:#f5f5f5;
+--accent:#c9a227;
 
-/* SPACING */
-:root {
-    --spacing-xs: 0.5rem;
-    --spacing-sm: 1rem;
-    --spacing-md: 1.5rem;
-    --spacing-lg: 2rem;
-    --spacing-xl: 3rem;
-}
+--text-dark:#222;
+--text-light:#777;
 
-/* SHADOWS */
-:root {
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
-    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
-    --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.1);
+--max-width:1200px;
+
+--radius:8px;
+
+--shadow:0 10px 25px rgba(0,0,0,0.08);
+
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }

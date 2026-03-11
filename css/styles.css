@@ -1,49 +1,47 @@
-/* Global Imports */
-@import url('./variables.css');
-@import url('./navigation.css');
-@import url('./hero.css');
-@import url('./sections.css');
-@import url('./contact.css');
-@import url('./responsive.css');
+@import url("variables.css");
+@import url("navigation.css");
+@import url("hero.css");
+@import url("sections.css");
+@import url("contact.css");
+@import url("responsive.css");
 
-/* Global Styles */
-* {
-    box-sizing: border-box;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+body{
+background:white;
+color:var(--text-dark);
+line-height:1.6;
 }
 
-body {
-    font-family: var(--font-primary);
-    color: var(--text-dark);
-    line-height: var(--line-height-base);
-    background: var(--white);
+a{
+text-decoration:none;
+color:inherit;
 }
 
-/* Footer */
-footer {
-    background: var(--dark-gray);
-    color: var(--white);
-    padding: var(--spacing-xl) 2rem;
-    text-align: center;
-    margin-top: 4rem;
+.section{
+padding:80px 20px;
+max-width:var(--max-width);
+margin:auto;
 }
 
-footer p {
-    margin: 0.5rem 0;
-    font-size: 0.95rem;
+.section-title{
+text-align:center;
+font-size:32px;
+margin-bottom:40px;
+font-weight:600;
 }
 
-footer a {
-    color: var(--gold);
-    text-decoration: none;
-    transition: color 0.3s;
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:40px 20px;
 }
 
-footer a:hover {
-    color: #e6c200;
+footer p{
+margin:6px 0;
 }

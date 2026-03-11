@@ -1,79 +1,19 @@
-/* TABLET */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5rem;
-    }
+@media(max-width:768px){
 
-    .section-title {
-        font-size: 2rem;
-    }
-
-    .nav-menu {
-        display: none;
-    }
-
-    .service-cards, 
-    .client-cards, 
-    .fabric-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .color-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .contact-container {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .quick-contact-grid,
-    .location-section {
-        grid-template-columns: 1fr;
-    }
+.nav-menu{
+display:none;
 }
 
-/* MOBILE */
-@media (max-width: 480px) {
-    nav {
-        padding: 1rem;
-    }
+.hero h1{
+font-size:30px;
+}
 
-    .nav-logo {
-        font-size: 1.2rem;
-    }
+.contact-container{
+grid-template-columns:1fr;
+}
 
-    .nav-logo img {
-        width: 32px;
-        height: 32px;
-    }
+.section{
+padding:60px 20px;
+}
 
-    .hero {
-        padding: 3rem 1rem;
-        min-height: 400px;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .section {
-        padding: 2rem 1rem;
-    }
-
-    .service-cards, 
-    .client-cards, 
-    .fabric-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .color-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        padding: 1rem;
-    }
-
-    .contact-form-wrapper {
-        padding: 1.5rem;
-    }
 }
