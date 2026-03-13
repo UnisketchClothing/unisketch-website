@@ -1,37 +1,25 @@
-.contact-container{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-margin-top:30px;
-}
+.contact form{
 
-.contact-info p{
-margin-bottom:12px;
-}
-
-.contact-form{
+max-width:500px;
+margin:auto;
 display:flex;
 flex-direction:column;
-gap:14px;
+gap:15px;
+
 }
 
-.contact-form input,
-.contact-form textarea{
+.contact input,
+.contact textarea{
+
 padding:12px;
-border:1px solid #ddd;
-border-radius:var(--radius);
-font-size:14px;
+
 }
 
-.contact-form button{
-background:var(--accent);
+.contact button{
+
+padding:12px;
+background:black;
 color:white;
-padding:12px;
 border:none;
-border-radius:var(--radius);
-cursor:pointer;
-}
 
-.contact-form button:hover{
-opacity:0.9;
 }

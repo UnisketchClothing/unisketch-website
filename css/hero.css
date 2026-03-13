@@ -1,47 +1,46 @@
 .hero{
-background:#fafafa;
-padding:100px 20px;
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
 text-align:center;
+padding-top:100px;
+background:#f5f5f5;
+position:relative;
+overflow:hidden;
 }
 
-.hero-container{
-max-width:900px;
-margin:auto;
-}
+/* subtle fabric texture */
 
-.hero-logo{
-width:200px;
-margin-bottom:20px;
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:url("../assets/images/fabric-texture.png");
+opacity:0.05;
+pointer-events:none;
 }
 
 .hero h1{
 font-size:42px;
+max-width:700px;
+line-height:1.3;
 margin-bottom:15px;
 }
 
 .hero p{
-color:var(--text-light);
-margin-bottom:30px;
+font-size:16px;
+letter-spacing:1px;
+color:#666;
 }
 
 .hero-image{
-width:100%;
-max-width:700px;
-border-radius:var(--radius);
-box-shadow:var(--shadow);
-margin-bottom:30px;
-}
-
-.hero-button{
-background:var(--accent);
-padding:12px 28px;
-color:white;
-border-radius:var(--radius);
-display:inline-block;
-font-weight:600;
-transition:0.3s;
-}
-
-.hero-button:hover{
-opacity:0.85;
+max-width:500px;
+margin-top:30px;
+position:relative;
+z-index:2;
 }
