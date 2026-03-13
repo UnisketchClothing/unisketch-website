@@ -7,7 +7,9 @@ background:#fafafa;
 }
 
 .section{
-padding:100px 10%;
+max-width:1200px;
+margin:auto;
+padding:80px 20px;
 }
 
 .section-title{

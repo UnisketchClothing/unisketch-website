@@ -40,17 +40,16 @@ overflow:hidden;
 margin-top:40px;
 }
 
-.logo-track{
-display:flex;
-gap:60px;
-align-items:center;
+.logo-track img{
+height:85px;
+width:auto;
+opacity:0.9;
+transition:all 0.3s ease;
 }
 
-.logo-track img{
-height:60px;
-width:auto;
-opacity:0.85;
-transition:all 0.3s ease;
+.logo-track img:hover{
+opacity:1;
+transform:scale(1.08);
 }
 
 /* hover effect */
