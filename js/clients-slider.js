@@ -1,11 +1,7 @@
-document.addEventListener("DOMContentLoaded", function(){
+@media (max-width:768px){
 
-const track = document.querySelector(".logo-track");
+.section{
+padding:60px 20px;
+}
 
-if(!track) return;
-
-const logos = track.innerHTML;
-
-track.innerHTML += logos;
-
-});
+}
