@@ -1,47 +1,184 @@
-@import url("variables.css");
-@import url("navigation.css");
-@import url("hero.css");
-@import url("sections.css");
-@import url("contact.css");
-@import url("responsive.css");
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
 body{
-background:white;
-color:var(--text-dark);
-line-height:1.6;
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+color:#222;
 }
 
-a{
+/* NAVBAR */
+
+.navbar{
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+}
+
+.nav-container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+}
+
+.logo img{
+height:55px;
+}
+
+.nav-menu{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+.nav-menu a{
 text-decoration:none;
-color:inherit;
+color:#222;
+font-weight:500;
 }
 
-.section{
-padding:80px 20px;
-max-width:var(--max-width);
-margin:auto;
+
+/* HERO */
+
+.hero{
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:#f5f6f7;
+padding-top:80px;
 }
+
+.hero h2{
+font-size:26px;
+margin-bottom:20px;
+}
+
+.hero-image{
+max-width:800px;
+width:90%;
+}
+
+
+/* SECTION */
 
 .section-title{
 text-align:center;
 font-size:32px;
-margin-bottom:40px;
-font-weight:600;
+margin-bottom:50px;
 }
 
-footer{
-background:#111;
-color:white;
+
+/* PRODUCTS */
+
+.products{
+padding:80px 10%;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+}
+
+.product-card{
 text-align:center;
-padding:40px 20px;
 }
 
-footer p{
-margin:6px 0;
+.product-card img{
+width:100%;
+border-radius:8px;
+}
+
+.product-card h3{
+margin-top:15px;
+}
+
+
+/* FABRICS */
+
+.fabrics{
+padding:80px 10%;
+background:#f7f7f7;
+}
+
+.fabric-grid{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:30px;
+text-align:center;
+}
+
+.fabric img{
+width:120px;
+height:120px;
+border-radius:50%;
+}
+
+.fabric p{
+margin-top:10px;
+}
+
+
+/* WHY */
+
+.why{
+padding:80px 10%;
+}
+
+.why-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.why-card{
+padding:30px;
+background:#f5f5f5;
+border-radius:8px;
+}
+
+
+/* CLIENTS */
+
+.clients{
+padding:80px 10%;
+background:#fafafa;
+}
+
+.logo-slider{
+overflow:hidden;
+}
+
+.logo-track{
+display:flex;
+gap:60px;
+animation:scroll 20s linear infinite;
+}
+
+.logo-track img{
+height:60px;
+}
+
+@keyframes scroll{
+0%{transform:translateX(0);}
+100%{transform:translateX(-50%);}
+}
+
+
+/* ABOUT */
+
+.about{
+padding:80px 10%;
+text-align:center;
+}
+
+
+/* FOOTER */
+
+.footer{
+background:#111;
+color:#fff;
+text-align:center;
+padding:20px;
 }
