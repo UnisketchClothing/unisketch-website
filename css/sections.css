@@ -40,23 +40,22 @@ overflow:hidden;
 margin-top:40px;
 }
 
+.logo-track{
+display:flex;
+align-items:center;
+gap:80px;
+}
+
 .logo-track img{
-height:85px;
+height:90px;
 width:auto;
 opacity:0.9;
-transition:all 0.3s ease;
+transition:0.3s;
 }
 
 .logo-track img:hover{
-opacity:1;
 transform:scale(1.08);
-}
-
-/* hover effect */
-
-.logo-track img:hover{
 opacity:1;
-transform:scale(1.08);
 }
 
 @keyframes scrollClients{

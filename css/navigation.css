@@ -1,6 +1,5 @@
 /* NAVBAR */
 
-
 .navbar{
 position:fixed;
 top:0;
@@ -15,7 +14,7 @@ z-index:1000;
 
 .nav-container{
 max-width:1200px;
-margin:auto;
+margin:0 auto;
 display:flex;
 align-items:center;
 justify-content:space-between;
@@ -25,21 +24,22 @@ padding:12px 20px;
 /* LOGO */
 
 .logo{
-height:55px;
+height:60px;
 width:auto;
 display:block;
 }
 
+/* NAV LINKS */
+
 nav{
 display:flex;
 align-items:center;
-gap:28px;
+gap:30px;
 }
 
 nav a{
 text-decoration:none;
 color:#222;
-font-size:17px;
+font-size:18px;
 font-weight:500;
-white-space:nowrap;
 }
